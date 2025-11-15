@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM - Complete Customer Relationship Management Solution</title>
+    <meta name="description"
+        content="Powerful CRM solution with lead management, contact tracking, sales automation, and comprehensive reporting tools." />
+    <link rel="shortcut icon" href="./assets/logo/favicon_one.png" type="image/x-icon" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="CRM - Complete Customer Relationship Management Solution" />
+    <meta property="og:description"
+        content="Powerful CRM solution with lead management, contact tracking, sales automation, and comprehensive reporting tools." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/PaulleDemon" />
+    <!--Replace with the current website url-->
+    <meta property="og:image" content="" />
+
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+    <link rel="stylesheet" href="./css/tailwind-build.css">
+    <link rel="stylesheet" href="css/index.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17044303765"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17044303765');
+  
+</script>
+<meta name="google-site-verification" content="2ys033VdH3WztSdaFNT24_0Sj_x9eAESO_WXkwQ2BpI" />
+</head>
+
+<body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white">
+    <header
+        class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around">
+        <!-- <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href=""> -->
+        <a style="padding: 10px;" class="tw-h-[50px]" href="">
+            <img src="./assets/logo/CRMGuruLogo.png" alt="logo" class="tw-object tw-h-full tw-w-full" />
+        </a>
+        <div class="collapsible-header animated-collapse max-lg:tw-shadow-md" id="collapsed-header-items">
+            <div
+                class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+                <a class="header-links" href="#why-choose-us"> why choose us </a>
+                <a class="header-links" href="#pricing"> Pricing </a>
+                <a class="header-links" href="#features"> Features </a>
+                <a class="header-links" href="#testimonials"> Testimonials </a>
+                <a class="header-links" href="#contact-section"> Contact </a>
+            </div>
+            <div
+                class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
+                <!-- <a href="" aria-label="signup"
+                    class="tw-rounded-full tw-bg-white tw-px-3 tw-py-2 tw-text-black tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2">
+                    <span>Request Demo</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a> -->
+            </div>
+        </div>
+        <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
+            onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
+    </header>
+
+    <section
+        class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+        id="hero-section">
+        <div
+            class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4">
+            <div class="tw-flex tw-flex-col tw-place-content-center tw-items-center">
+                <div
+                    class="reveal-up gradient-text tw-text-center tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug">
+                    <span class=""> Transform Your </span>
+                    <br />
+                    <span class=""> Real Estate Business </span>
+                </div>
+                <!-- <div class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"> -->
+                <div style="max-width: 700px;"
+                    class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full">
+                    A specialized CRM solution for real estate professionals to manage properties, leads, and client
+                    relationships
+                    while closing more deals with powerful automation and analytics tools.
+                </div>
+
+                <div class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4">
+                    <!-- <a class="btn tw-bg-[#7e22ce85] tw-shadow-lg tw-shadow-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]" -->
+                    <a style="background-color: var(--btn-bg); box-shadow: 0 4px 14px 0 rgba(68 172 252);"
+                        class="btn tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                        href="#contact-section">
+                        Contact Us
+                    </a>
+                 
+                </div>
+            </div>
+
+            <div class="reveal-up tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                id="dashboard-container">
+                <div class="tw-relative tw-max-w-[80%] tw-overflow-hidden tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                    id="dashboard">
+                         <img src="./assets/images/home/CRMPanel.png" alt="dashboard"
+                        class="tw-h-full tw-w-full tw-object-cover tw-opacity-90 max-lg:tw-object-contain" />
+                </div>
+
+                    </div>
+        </div>
+    </section>
+
+
+    <section id="why-choose-us"
+        class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6">
+        <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+            <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                    why choose us
+                </h2>
+            </div>
+             <div class="tw-mt-6 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+                <div
+                    class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                    <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]">
+                        <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                            <i class="bi bi-rocket-takeoff-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                        </div>
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                        <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl">
+                            Minimize hours spent
+                        </h3>
+                        <div class="tw-text-gray-300">
+                            Streamline Operations
+                            Automate routine tasks and reduce manual work with our intelligent CRM, giving you more time
+                            to focus on growing your business.
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                    <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-text-[150px]">
+                        <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                            <i class="bi bi-layout-sidebar-inset tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                        </div>
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                        <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl">
+                            Simple to use
+                        </h3>
+                        <div class="tw-text-gray-300">
+                            User-Friendly Interface
+                            Get started quickly with our intuitive CRM platform that requires minimal training and
+                            offers seamless navigation for your entire team.
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="tw-mt-6 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+                <div
+                    class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                    <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]">
+                        <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                            <i class="bi bi-lightning-charge-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                        </div>
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                        <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl">
+                            Speed up your development
+                        </h3>
+                        <div class="tw-text-gray-300">
+                            Accelerate Growth
+                            Leverage powerful CRM tools to shorten sales cycles, improve customer engagement, and drive
+                            business growth faster than ever before.
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                    <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]">
+                        <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                            <i class="bi bi-house-heart-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                        </div>
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                        <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl">
+                            Real Estate Focused
+                        </h3>
+                        <div class="tw-text-gray-300">
+                            Property Management
+                            Built specifically for real estate with features for property listings, client tours, and
+                            deal tracking to help you close more sales efficiently.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features"
+        class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6">
+        <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+            <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl">
+                    CRM  Features
+                </h2>
+            </div>
+            <div 
+                class="tw-mt-6 tw-flex tw-max-w-[80%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+                <div
+                class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]">
+                <div class="tw-text-4xl max-md:tw-text-2xl">
+                    <i class="bi bi-people"></i>
+                </div>
+
+                <div class="tw-flex tw-flex-col tw-gap-4">
+                    <h3 class="tw-text-2xl max-md:tw-text-xl">
+                        Super Admin, Admin and Employee Management
+                    </h3>
+                    <p class="tw-text-gray-300 max-md:tw-text-sm">
+                        Manage User Management, Roles and Responsibility Of CRM
+                        with granular permission controls.
+                    </p>
+                </div>
+            </div>
+                <div
+                    class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]">
+                    <div class="tw-text-4xl max-md:tw-text-2xl">
+                        <i class="bi bi-person-lines-fill"></i>
+                    </div>
+
+                    <div class="tw-flex tw-flex-col tw-gap-4">
+                        <h3 class="tw-text-2xl max-md:tw-text-xl">
+                            Lead Management
+                        </h3>
+                        <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            Track leads through the sales pipeline with our comprehensive
+                            lead management system designed for maximum conversion.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div
+                    class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]">
+                    <div class="tw-text-4xl max-md:tw-text-2xl">
+                        <i class="bi bi-bar-chart-fill"></i>
+                    </div>
+
+                    <div class="tw-flex tw-flex-col tw-gap-4">
+                        <h3 class="tw-text-2xl max-md:tw-text-xl">
+                            Reporting and Analytics
+                        </h3>
+                        <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            Generate comprehensive reports to analyze performance
+                            and make data-driven decisions for your business.
+                        </p>
+                    </div>
+                </div>
+
+             <div
+  class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]">
+  
+  <div class="tw-text-4xl max-md:tw-text-2xl">
+    <i class="bi bi-upload"></i> <!-- Changed icon to upload -->
+  </div>
+
+  <div class="tw-flex tw-flex-col tw-gap-4">
+    <h3 class="tw-text-2xl max-md:tw-text-xl">
+      Import Data
+    </h3>
+    <p class="tw-text-gray-300 max-md:tw-text-sm">
+      Easily import leads, contacts, or project data into the CRM to streamline your workflow and reduce manual entry.
+    </p>
+  </div>
+</div>
+
+
+                <div
+                    class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]">
+                    <div class="tw-text-4xl max-md:tw-text-2xl">
+                        <i class="bi bi-box"></i>
+                    </div>
+
+                    <div class="tw-flex tw-flex-col tw-gap-4">
+                        <h3 class="tw-text-2xl max-md:tw-text-xl">
+                            Other Platform Integration
+                        </h3>
+                        <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            Integrate third-party APIs like Facebook, 99Acres, and more
+                            to streamline your marketing efforts.
+                        </p>
+                    </div>
+                </div>
+
+            
+
+                <div
+                    class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]">
+                    <div class="tw-text-4xl max-md:tw-text-2xl">
+                        <i class="bi bi-phone"></i>
+                    </div>
+
+                    <div class="tw-flex tw-flex-col tw-gap-4">
+                        <h3 class="tw-text-2xl max-md:tw-text-xl">
+                            Mobile Friendly
+                        </h3>
+                        <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            CRM is Mobile Friendly and can be accessed from any device
+                            with an internet connection.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]">
+                    <div class="tw-text-4xl max-md:tw-text-2xl">
+                        <i class="bi bi-puzzle"></i>
+                    </div>
+
+                    <div class="tw-flex tw-flex-col tw-gap-4">
+                        <h3 class="tw-text-2xl max-md:tw-text-xl">
+                         Project Management
+                        </h3>
+                        <p class="tw-text-gray-300 max-md:tw-text-sm">
+                           This module allows admins to add new real estate projects along with their unit configurations (e.g., flats, plots, villas). 
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]">
+                    <div class="tw-text-4xl max-md:tw-text-2xl">
+                        <i class="bi bi-headset"></i>
+                    </div>
+
+                    <div class="tw-flex tw-flex-col tw-gap-4">
+                        <h3 class="tw-text-2xl max-md:tw-text-xl">
+                             Support 
+                        </h3>
+                        <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            Dedicated support team and comprehensive documentation to help you
+                            get the most out of our CRM system and resolve any queries.
+                        </p>
+                    </div>
+                </div>
+
+               
+
+                <div
+                    class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]">
+                    <div class="tw-text-4xl max-md:tw-text-2xl">
+                        <i class="bi bi-file-earmark-excel"></i>
+                    </div>
+
+                    <div class="tw-flex tw-flex-col tw-gap-4">
+                        <h3 class="tw-text-2xl max-md:tw-text-xl">
+                            Data Export
+                        </h3>
+                        <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            Download Data of Lead Start date to End Data in Form of Excel
+                            for offline analysis and reporting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class=" crm-integeration tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6">
+       <div class="reveal-up tw-flex tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10 ">
+            <div class="tw-flex">
+                
+                <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg"
+                    style="box-shadow: 0 10px 25px -5px rgba(76, 172, 252, 0.5), 0 8px 10px -6px rgba(76, 172, 252, 0.3);">
+                    <img src="./assets/images/home/employepanel.png" alt="coding"
+                        class="tw-h-full tw-w-full tw-object-cover" />
+                </div>
+            </div>
+            <div class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
+                <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+                    Seamless CRM Integration
+                </h3>
+
+                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl"></i>
+                        Smart Automation
+                    </h4>
+                    <span class="tw-text-lg tw-text-gray-300 max-md:tw-text-base">
+                        Automate lead scoring, follow-ups, and customer segmentation to save time and increase
+                        efficiency.
+
+                    </span>
+                </div>
+                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl"></i>
+                        Real-time Analytics
+                    </h4>
+                    <span class="tw-text-lg tw-text-gray-300 max-md:tw-text-base">
+                        Track sales performance, customer interactions, and team productivity with live dashboards and
+                        reports.
+
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section  class="actionable-insights tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6">
+        <!-- <div class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"> -->
+        <div class="reveal-up tw-flex tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
+            <div class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
+                <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+                    Actionable Business Insights
+                </h3>
+
+                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl"></i>
+                        Intuitive Interface
+                    </h4>
+                    <span class="tw-text-lg tw-text-gray-300 max-md:tw-text-base">
+                        Navigate complex customer data with our user-friendly dashboard designed for quick access to key
+                        metrics and reports.
+
+                    </span>
+                </div>
+                <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl"></i>
+                        Unified Dashboard
+                    </h4>
+                    <span class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"> Access all your CRM data, analytics,
+                        and tools from a single, comprehensive interface for complete business visibility.
+
+                    </span>
+                </div>
+            </div>
+
+            <div class="tw-flex">
+            
+                <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg"
+                    style="box-shadow: 0 10px 25px -5px rgba(76, 172, 252, 0.5), 0 8px 10px -6px rgba(76, 172, 252, 0.3);">
+                    <img src="./assets/images/home/employepanel.png" alt="coding"
+                        class="tw-h-full tw-w-full tw-object-cover" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials"
+        class="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]">
+        <h3 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl">
+            What Our Clients Say
+        </h3>
+        <p class="tw-mt-4 tw-text-gray-400 tw-text-center tw-max-w-2xl">
+            Discover how businesses like yours are achieving 3x more conversions and 40% faster response times with our
+            CRM platform
+        </p>
+        <!-- Testimonials -->
+        <div class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3">
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]">
+                <p class="tw-mt-4 tw-text-gray-300">
+                    The platform has transformed how we manage customer relationships. The intuitive interface and
+                    powerful features have made our sales process much more efficient. Highly recommended!
+                </p>
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div
+                        class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-bg-gray-700 tw-flex tw-items-center tw-justify-center">
+                        <i class="bi bi-person-fill tw-text-2xl"></i>
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-font-semibold">Rajesh Mehta</div>
+                     
+                    </div>
+                </div>
+            </div>
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]">
+                <p class="tw-mt-4 tw-text-gray-300">
+                    We've seen a significant improvement in our lead response times since implementing this solution.
+                    The mobile accessibility allows us to stay connected with our team and clients from anywhere.
+                </p>
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div
+                        class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-bg-gray-700 tw-flex tw-items-center tw-justify-center">
+                        <i class="bi bi-person-fill tw-text-2xl"></i>
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-font-semibold">Priya Sharma</div>
+                        <!-- <div class="tw-text-gray-400">Founder, TechStart India</div> -->
+                    </div>
+                </div>
+            </div>
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]">
+                <p class="tw-mt-4 tw-text-gray-300">
+                    The analytics and reporting capabilities have given us valuable insights into our business
+                    operations. Our team's productivity has improved dramatically since we started using this platform.
+                </p>
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div
+                        class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-bg-gray-700 tw-flex tw-items-center tw-justify-center">
+                        <i class="bi bi-person-fill tw-text-2xl"></i>
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-font-semibold">Amit Patel</div>
+                        <!-- <div class="tw-text-gray-400">CEO, SalesMagnet</div> -->
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+    </section>
+    <section class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%]" id="pricing">
+        <h3 style="text-align: center;" class="tw-text-4xl tw-font-medium tw-text-gray-300 max-md:tw-text-3xl">Simple, Transparent Pricing</h3>
+        <p style="text-align: center;">Choose the plan that works best for your business needs</p>
+        <!-- pricing -->
+        <div class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+            <div
+                class="reveal-up tw-flex tw-w-[355px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 tw-shadow-xl ">
+                <h3 class="">
+                    <span class="tw-text-5xl tw-font-semibold">₹ 1,000</span>
+                    <span class="tw-text-2xl tw-text-gray-400">/month</span>
+                </h3>
+                <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                    Billed monthly
+                </p>
+                <hr />
+                <ul style="list-style-type: disc;"
+                    class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-start tw-text-lg tw-text-gray-200">
+                    <li>Lead & Contact Management</li>
+                    <li>Sales Automation</li>
+                    <li>Task & Project Management</li>
+                    <li>Reporting & Analytics</li>
+                    <li>Customizable Dashboards</li>
+                    <li>Email & WhatsApp Integration</li>
+                    <li>Priority Support</li>
+                    <li>Advanced Data Export</li>
+                </ul>
+                <a href="#contact-section"
+                    class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]">
+                    Get now
+                </a>
+            </div>
+              <div
+                class="reveal-up tw-flex tw-w-[355px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 tw-shadow-xl ">
+                <h3 class="">
+                    <span class="tw-text-5xl tw-font-semibold">₹ 700</span>
+                    <span class="tw-text-2xl tw-text-gray-400">/year</span>
+                </h3>
+                <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                    Billed Yearly
+                </p>
+                <hr />
+                <ul style="list-style-type: disc;"
+                    class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-start tw-text-lg tw-text-gray-200">
+                    <li>Lead & Contact Management</li>
+                    <li>Sales Automation</li>
+                    <li>Task & Project Management</li>
+                    <li>Reporting & Analytics</li>
+                    <li>Customizable Dashboards</li>
+                    <li>Email & WhatsApp Integration</li>
+                    <li>Priority Support</li>
+                    <li>Advanced Data Export</li>
+                </ul>
+                <a href="#contact-section"
+                    class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]">
+                    Get now
+                </a>
+            </div>
+    
+        </div>
+    </section>
+
+  
+    <section id="faq"
+        class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]">
+        <h3 class="tw-text-4xl tw-font-medium tw-text-gray-300 max-md:tw-text-2xl">
+            Frequently Asked Questions
+        </h3>
+        <div class="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4">
+            <div
+                class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]">
+                <div class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>Is the CRM suitable for Indian businesses?</span>
+                    <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                </div>
+                <div class="content">
+                    Absolutely! Our CRM is specifically designed for Indian businesses with features like GST-compliant
+                    invoicing, WhatsApp integration, and support for multiple Indian languages. It works seamlessly
+                    across all network conditions, including 2G/3G areas.
+                </div>
+            </div>
+
+            <div
+                class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]">
+                <div class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>How does the WhatsApp integration work?</span>
+                    <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                </div>
+                <div class="content">
+                    Our WhatsApp Business API integration allows you to send automated notifications, appointment
+                    reminders, and respond to customer queries directly from the CRM. It's perfect for the Indian market
+                    where WhatsApp is widely used for business communication.
+                </div>
+            </div>
+
+            <div
+                class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]">
+                <div class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>Can I access the CRM on mobile?</span>
+                    <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                </div>
+                <div class="content">
+                    Yes! Our mobile-responsive web app works on all devices, and we also offer native mobile apps for
+                    both Android and iOS. The app is optimized to work even with limited internet connectivity, which is
+                    common in many parts of India.
+                </div>
+            </div>
+
+            <div
+                class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]">
+                <div class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>How does the pricing work for Indian businesses?</span>
+                    <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                </div>
+                <div class="content">
+                    We offer competitive pricing in Indian Rupees with flexible plans based on the number of users and
+                    features required. We also have special pricing for startups and MSMEs under the Make in India
+                    initiative. All prices are inclusive of GST.
+                </div>
+            </div>
+
+            <div
+                class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]">
+                <div class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>What kind of support do you provide?</span>
+                    <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                </div>
+                <div class="content">
+                    We provide 24/5 customer support via WhatsApp, email, and phone. Our support team is based in India
+                    and understands local business practices. We also offer training sessions in Hindi and English to
+                    help your team get the most out of our CRM.
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-section">
+        <div class="contact-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions about our CRM solution? Fill out the form below and our team will get back to you
+                    within 24 hours.</p>
+            </div>
+
+            <!-- Contact Form Card -->
+            <div class="contact-form-card">
+                <form id="contactForm" class="contact-form">
+                    <!-- Two-column layout for name and email on larger screens -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" placeholder="Enter your company name">
+                    </div>
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                        <label for="phone_no">Mobile Number</label>
+                        <input type="text" id="phone_no" name="phone_no" placeholder="Enter your Mobile Number" required maxlength='10'>
+                    </div>
+
+                    <!-- Subject dropdown -->
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="sales">Sales Information</option>
+                            <option value="support">Technical Support</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Message text area -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..."
+                            required></textarea>
+                    </div>
+
+                   
+
+                    <!-- Submit button -->
+                    <div class="form-submit">
+                        <button type="submit" class="submit-button">
+                         
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- <footer style="display: flex; flex-wrap: wrap;" class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-10 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col "> -->
+    <footer style="display: flex; flex-wrap: wrap;" class="tw-mt-auto tw-flex tw-w-full tw-gap-10 tw-p-[5%] tw-px-[10%] tw-text-white ">
+        <!-- <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"> -->
+    
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-6 ">
+            <img src="./assets/logo/CRMGuruLogo.png" alt="logo" srcset="" class="tw-max-w-[120px]" />
+            <div>
+              1815 Wright Town,
+                <br />
+               Jabalpur, Madhya Pradesh
+                <br />
+                INDIA 482002
+            </div>
+            <div>+91-7440992424</div>
+            <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+            <div class="tw-flex tw-gap-4 tw-text-2xl">
+                <a href="" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com/@pauls_freeman" aria-label="Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://instagram.com/" class="tw-h-[40px] tw-w-[40px]" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4 max-md:tw-mx-auto max-md:tw-text-center ">
+            <h2 class="tw-text-3xl max-md:tw-text-xl">Company</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                <a href="" class="footer-link">Use cases</a>
+                <a href="" class="footer-link">Integrations</a>
+                <a href="" class="footer-link">Change logs</a>
+                <a href="" class="footer-link">Blogs</a>
+                <a href="" class="footer-link">Contact</a>
+            </div>
+        </div>
+
+        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4 max-md:tw-mx-auto max-md:tw-text-center">
+            <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                <a href="" class="footer-link">About us</a>
+                <a href="" class="footer-link">FAQ</a>
+                <a href="" class="footer-link">Contact Us</a>
+                <a href="" class="footer-link">Blogs</a>
+                <a href="" class="footer-link">Privacy policy</a>
+            </div>
+        </div>
+    </footer>
+    <section id="copyright" class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+        <p style="padding: 20px 10px; text-align: center;" id="copyright-text">
+            Copyright © [year] DOAGuru InfoSystems
+        </p>
+    </section>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C0DZXCMRJ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C0DZXCMRJ1');
+</script>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./index.js"></script>
+
+
+</html>
